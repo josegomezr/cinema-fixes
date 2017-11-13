@@ -11,8 +11,6 @@
 		</p>
 		<div class="block-center text-center">
 			<div class="cinema-grid">
-				
-				
 				<div class="cinema-screen">
 					<p>Pantalla</p>
 				</div>
@@ -22,8 +20,7 @@
 					ng-click="gridCtl.conmutarAsiento(r_val.col,r_val.row)" 
 					ng-repeat="(r_idx, r_val) in gridCtl.mapa[c_idx]" 
 					ng-class="{
-						'btn-danger': r_val.no_disponible, 
-						'invisible': r_val.pasillo,  
+						'invisible': (r_val.pasillo || r_val.no_disponible),  
 						'btn-warning': r_val.no_usado, 
 						'btn-disabled': r_val.ocupado, 
 						'btn-success': r_val.tomado,

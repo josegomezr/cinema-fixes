@@ -6,15 +6,13 @@ body{
 }
 
 .room-row {
-	vertical-align: middle;
 	display: block;
 }
 
 .room-cell {
     text-align: center;
-    margin: 2px;
     font-size: 18px;
-    width: 30px;
+    width: 28px;
     height: 30px;
 }
 
@@ -51,8 +49,8 @@ body{
 }
 
 .cinema-screen{
-    border-bottom: 50px solid rgba(86, 86, 86, 0.43);
-    border-left: 27px solid transparent;
+    border-top: 50px solid rgba(86, 86, 86, 0.43);
+    border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     height: 0;
     width: 420px;
@@ -61,10 +59,9 @@ body{
 }
 .cinema-screen p{
     position: relative;
-    top: 8px;
+    top: -40px;
     font-size: 25px;
     color: white;
-    transform: rotate(180deg);
 }
 
 .alert-disabled{

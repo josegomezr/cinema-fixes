@@ -216,13 +216,14 @@
             if(data.pasillo4){
                 n_pasillos++;
             }
+            
+            data.columnas_sala += n_pasillos;
 
-            data.filas_sala += n_pasillos;
             // Aqui populamos las filas
             for (var j = data.columnas_sala; j > 0; j--) {
                 self.filas.push(j);
             };
-
+            
             // Aqui populamos las columnas, 
             // Letras para columnas validas, Guión (-) para pasillo.
             
@@ -247,12 +248,12 @@
         this.buscar_cell = function(map, row, col){
             var cell = (row+'')+(col+'');
             var result = _.filter(map, function(obj){
-                return !!obj[cell]
+                return obj.coord == cell
             })
 
             if (result.length == 0 ){
                 //throw new Error("Cell not found")
-                 return {nombre_real: ''};
+                 return {nombre_real: 'X'};
             
             }
 
@@ -265,12 +266,9 @@
         this.raw_data_ocupado = function (row, col) {
             return this.raw_data.asientos_ocupados.indexOf(row+col) !== -1;
         }
-        this.mapa_ocupado = function (row, col) {
-            return this.raw_data.asientos_ocupados.indexOf(row+col) !== -1;
-        }
 
         this.esta_pasillo = function (row, col) {
-            return (row[0] == '|' || (col+'')[0] == '|') || (this.esta_reservado(row, col) && this.asientos_predeterminados[row+col] == 'P');
+            return this.esta_reservado(row, col) && this.asientos_predeterminados[row+col] == 'P';
         }
         this.esta_no_usado = function (row, col) {
             return this.esta_reservado(row, col) && this.asientos_predeterminados[row+col] == 'S';
@@ -421,16 +419,24 @@
         }
         */
         function interpretarMapa (mapa) {
-            for(var k in mapa){
-                for (var idx in mapa[k]) {
-                    var status = mapa[k][idx];
-                    var col = idx[0];
-                    var row = idx.substr(1);
-                    var coord = col+row;
-                    if(status)
-                        self.asientos_predeterminados[coord] = status;
-                };
-            }
+
+            var newMap = _.map(mapa, function(obj){
+                var nombre = obj.nombre_real;
+                var coord = _.keys(obj)[0];
+                var status = obj[coord];
+                delete obj.nombre_real
+                return {
+                    status: status,
+                    coord: coord,
+                    nombre_real: nombre
+                }
+            });
+            
+            _.forEach(newMap, function(obj){
+                self.asientos_predeterminados[obj.coord] = obj.status;
+            })
+
+
 
             for ( var j in self.columnas ){
                 var row = [];
@@ -449,10 +455,7 @@
                     cell.pasillo = self.esta_pasillo(cell.col, cell.row);
                     cell.no_usado = self.esta_no_usado(cell.col, cell.row);
                     cell.tomado = self.esta_tomado(cell.col, cell.row);
-                    cell.nombre_mostrar =  self.buscar_cell(mapa, cell.col, cell.row).nombre_real
-                    
-                    
-
+                    cell.nombre_mostrar =  self.buscar_cell(newMap, cell.col, cell.row).nombre_real
                     row.push(cell);
                 }
                 self.mapa.push(row);
