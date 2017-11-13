@@ -264,7 +264,10 @@
             return this.esta_reservado(row, col) && this.asientos_predeterminados[row+col] == 'N';
         }
         this.raw_data_ocupado = function (row, col) {
-            return this.raw_data.asientos_ocupados.indexOf(row+col) !== -1;
+            return this.raw_data.asientos_ocupados.indexOf(row + col) !== -1;
+        }
+        this.esta_ocupado = function (coord) {
+            return this.raw_data.asientos_ocupados.indexOf(coord) !== -1;
         }
 
         this.esta_pasillo = function (row, col) {
@@ -432,11 +435,9 @@
                 }
             });
             
-            _.forEach(newMap, function(obj){
+            _.forEach(newMap, function (obj) {
                 self.asientos_predeterminados[obj.coord] = obj.status;
             })
-
-
 
             for ( var j in self.columnas ){
                 var row = [];
@@ -449,13 +450,16 @@
                         row: filaObj,
                         coord: colObj.name+filaObj
                     };
+
+                    var cellData = self.buscar_cell(newMap, cell.col, cell.row);
+                    
                     cell.reservado = self.esta_reservado(cell.col, cell.row);
                     cell.no_disponible = self.esta_no_disponible(cell.col, cell.row);
-                    cell.ocupado = self.raw_data_ocupado(cell.col, cell.row);
+                    cell.ocupado = self.esta_ocupado(cellData.nombre_real);
                     cell.pasillo = self.esta_pasillo(cell.col, cell.row);
                     cell.no_usado = self.esta_no_usado(cell.col, cell.row);
                     cell.tomado = self.esta_tomado(cell.col, cell.row);
-                    cell.nombre_mostrar =  self.buscar_cell(newMap, cell.col, cell.row).nombre_real
+                    cell.nombre_mostrar = cellData.nombre_real;
                     row.push(cell);
                 }
                 self.mapa.push(row);
