@@ -1,0 +1,12 @@
+[
+  {
+    "codigo": "1",
+    "descripcion": "ADULTO",
+    "precio": "12.00"
+  },
+  {
+    "codigo": "2",
+    "descripcion": "NIÑOS - AD.MAYOR",
+    "precio": "10.00"
+  }
+]

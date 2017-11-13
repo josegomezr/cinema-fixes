@@ -1,0 +1,62 @@
+<div class="movie-row">
+    <h3 class="row-heading">
+        {{ ventaCtl.resumen.funcion.nombre_pelicula }}
+    </h3>
+    <ul class="list-unstyled list-inline">
+        <li>
+            <strong>Sala:</strong> <span>{{ ventaCtl.resumen.funcion.sala}}</span>
+        </li>
+        <li>-</li>
+        <li>
+            <strong>Fecha:</strong> <span>{{ ventaCtl.resumen.funcion.fecha | date:'dd/MM/yyyy' }}</span>
+        </li>
+        <li>-</li>
+        <li>
+            <strong>Hora:</strong> <span>{{ ventaCtl.resumen.funcion.hora | horaNumerica }}</span>
+        </li>
+    </ul>
+	
+    <table class="table">
+    	<thead>
+    		<tr>
+    			<th>Tipo</th>
+    			<th>Cantidad</th>
+    			<th>Precio</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr ng-repeat="tarifa in ventaCtl.resumen.tarifas" ng-if="ventaCtl.resumen.boletos[tarifa.codigo]">
+    			<td>{{ tarifa.descripcion }}</td>
+    			<td>{{ ventaCtl.resumen.boletos[tarifa.codigo] }}</td>
+    			<td>{{ tarifa.precio|currency:'S/.' }}</td>
+    		</tr>
+    	</tbody>
+    	<tfoot>
+    		<tr>
+    			<td>Total</td>
+    			<td>&nbsp;</td>
+    			<td>{{ ventaCtl.calcular_total_pagar()|currency:'S/.' }}</td>
+    		</tr>
+    	</tfoot>
+    </table>
+    <div ng-if="ventaCtl.resumen.numerado == 'P'">
+	    <h4>Asientos</h4>
+	    <span ng-repeat="asiento in ventaCtl.resumen.asientos.asientos">
+			<span class="btn btn-success" ng-bind="asiento"></span>
+		</span>
+		<div class="clearfix"></div>
+		<br>
+    </div>
+
+	<div class="row clearfix">
+		<div class="col-xs-12 col-md-4">
+			<button type="button" class="btn btn-default btn-block" ng-click="ventaCtl.cancelar_reserva()">Cancelar</button>
+		</div>
+		<div class="col-xs-12 col-md-8">
+			<button class="btn btn-primary btn-block" ng-click="ventaCtl.realizar_venta()">
+				Pagar</button>
+		</div>
+	</div>
+</div>
+
+<!-- <pre>{{ ventaCtl.resumen }}</pre> -->

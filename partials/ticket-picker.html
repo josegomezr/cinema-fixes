@@ -1,0 +1,56 @@
+<div class="ticket-picker">
+	<h3>Precios <small>Selecciona la cantidad de asientos para cada precio</small></h3>
+	<table class="table table-bordered reservador-boletos">
+		<thead>
+			<tr>
+				<th>Tipo</th>
+				<th>Precio</th>
+				<th width="150">Cantidad</th>
+				<th>Subtotal</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="tarifa in enqCtl.tarifas">
+				<td>
+					<strong ng-bind="tarifa.descripcion"></strong>
+				</td>
+				<td ng-bind="tarifa.precio|currency:'S/.'"></td>
+				<td>
+					<div class="input-group">
+						<span class="input-group-addon" ng-click="enqCtl.quitar_boleto(tarifa.codigo)">
+						<i class="glyphicon glyphicon-minus"></i>
+						</span>
+						<input class="form-control white-bg text-center" type="text" value="0" readonly ng-model="enqCtl.boletos[tarifa.codigo]">
+						<span class="input-group-addon" ng-click="enqCtl.agregar_boleto(tarifa.codigo)">
+							<i class="glyphicon glyphicon-plus"></i>
+						</span>
+					</div>
+				</td>
+				<td class="text-right" ng-bind="(tarifa.precio * enqCtl.boletos[tarifa.codigo] || 0)|currency:'S/.'"></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>Total</td>
+				<td></td>
+				<td class="text-center" ng-bind="enqCtl.total_boletos"></td>
+				<td class="text-right" ng-bind="enqCtl.total_pagar|currency:'S/.'"></td>
+			</tr>
+		</tfoot>
+	</table>
+	<div class="row clearfix" ng-show="enqCtl.funcion.numerado != 'P' || enqCtl.seleccionandoTickets">
+		<div class="col-xs-12 col-sm-4">
+			<a class="btn btn-default btn-block" href="#/">Cancelar</a>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<button class="btn btn-primary btn-block" ng-click="enqCtl.reservar()" ng-disabled="enqCtl.total_boletos == 0" ng-class=" {
+				'disabled': enqCtl.total_boletos == 0
+			}">
+				Siguiente</button>
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div ng-include="enqCtl.funcion.numerado == 'P' ? 'partials/seat-allocation.html' : null"></div>

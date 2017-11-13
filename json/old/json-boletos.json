@@ -1,0 +1,10 @@
+[{
+	"id": 1,
+	"tipo": "ADULTO",
+	"precio": 22.19
+},
+{
+	"id": 2,
+	"tipo": "NIÑO",
+	"precio": 17.84
+}]

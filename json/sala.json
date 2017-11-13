@@ -1,0 +1,1648 @@
+{
+    "funcion_id": "20171116Q01F1",
+    "nombre_pelicula": "LA LIGA DE LA JUSTICIA   (HD) (DOB)",
+    "fecha": "2017-11-16",
+    "sala": "01",
+    "hora": "1500",
+    "numerado": "P",
+    "preventa": "*",
+    "asientos_disponibles": 257,
+    "filas_sala": 11,
+    "columnas_sala": 33,
+    "pasillo1": 4,
+    "pasillo2": 17,
+    "pasillo3": 29,
+    "pasillo4": null,
+    "asientos_vip": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A17",
+        "A18",
+        "A19",
+        "A20",
+        "A21",
+        "A22",
+        "A23"
+    ],
+    "asientos_4x": [
+        "F7",
+        "F8",
+        "F9",
+        "F10",
+        "F11",
+        "F12",
+        "F13",
+        "F14",
+        "F15",
+        "F16",
+        "F20",
+        "F21",
+        "F22",
+        "F23"
+    ],
+    "asientos_ocupados": [
+        "F21",
+        "F22",
+        "F23"
+    ],
+    "mapa": [
+        {
+            "A1": "S",
+            "nombre_real": "A1"
+        },
+        {
+            "A2": "S",
+            "nombre_real": "A2"
+        },
+        {
+            "A3": "S",
+            "nombre_real": "A3"
+        },
+        {
+            "A4": "S",
+            "nombre_real": "A4"
+        },
+        {
+            "A5": "P",
+            "nombre_real": ""
+        },
+        {
+            "A6": "S",
+            "nombre_real": "A5"
+        },
+        {
+            "A7": "S",
+            "nombre_real": "A6"
+        },
+        {
+            "A8": "S",
+            "nombre_real": "A7"
+        },
+        {
+            "A9": "S",
+            "nombre_real": "A8"
+        },
+        {
+            "A10": "S",
+            "nombre_real": "A9"
+        },
+        {
+            "A11": "S",
+            "nombre_real": "A10"
+        },
+        {
+            "A12": "S",
+            "nombre_real": "A11"
+        },
+        {
+            "A13": "S",
+            "nombre_real": "A12"
+        },
+        {
+            "A14": "S",
+            "nombre_real": "A13"
+        },
+        {
+            "A15": "S",
+            "nombre_real": "A14"
+        },
+        {
+            "A16": "S",
+            "nombre_real": "A15"
+        },
+        {
+            "A17": "S",
+            "nombre_real": "A16"
+        },
+        {
+            "A18": "S",
+            "nombre_real": "A17"
+        },
+        {
+            "A19": "P",
+            "nombre_real": ""
+        },
+        {
+            "A20": "S",
+            "nombre_real": "A18"
+        },
+        {
+            "A21": "S",
+            "nombre_real": "A19"
+        },
+        {
+            "A22": "S",
+            "nombre_real": "A20"
+        },
+        {
+            "A23": "S",
+            "nombre_real": "A21"
+        },
+        {
+            "A24": "S",
+            "nombre_real": "A22"
+        },
+        {
+            "A25": "S",
+            "nombre_real": "A23"
+        },
+        {
+            "A26": "S",
+            "nombre_real": "A24"
+        },
+        {
+            "A27": "S",
+            "nombre_real": "A25"
+        },
+        {
+            "A28": "N",
+            "nombre_real": "A26"
+        },
+        {
+            "A29": "N",
+            "nombre_real": "A27"
+        },
+        {
+            "A30": "N",
+            "nombre_real": "A28"
+        },
+        {
+            "A31": "N",
+            "nombre_real": "A29"
+        },
+        {
+            "A32": "P",
+            "nombre_real": ""
+        },
+        {
+            "A33": "N",
+            "nombre_real": "A30"
+        },
+        {
+            "A34": "N",
+            "nombre_real": "A31"
+        },
+        {
+            "A35": "N",
+            "nombre_real": "A32"
+        },
+        {
+            "A36": "N",
+            "nombre_real": "A33"
+        },
+        {
+            "B1": "",
+            "nombre_real": "B1"
+        },
+        {
+            "B2": "",
+            "nombre_real": "B2"
+        },
+        {
+            "B3": "",
+            "nombre_real": "B3"
+        },
+        {
+            "B4": "",
+            "nombre_real": "B4"
+        },
+        {
+            "B5": "P",
+            "nombre_real": ""
+        },
+        {
+            "B6": "P",
+            "nombre_real": "B5"
+        },
+        {
+            "B7": "P",
+            "nombre_real": "B6"
+        },
+        {
+            "B8": "",
+            "nombre_real": "B7"
+        },
+        {
+            "B9": "",
+            "nombre_real": "B8"
+        },
+        {
+            "B10": "",
+            "nombre_real": "B9"
+        },
+        {
+            "B11": "",
+            "nombre_real": "B10"
+        },
+        {
+            "B12": "",
+            "nombre_real": "B11"
+        },
+        {
+            "B13": "",
+            "nombre_real": "B12"
+        },
+        {
+            "B14": "",
+            "nombre_real": "B13"
+        },
+        {
+            "B15": "",
+            "nombre_real": "B14"
+        },
+        {
+            "B16": "",
+            "nombre_real": "B15"
+        },
+        {
+            "B17": "",
+            "nombre_real": "B16"
+        },
+        {
+            "B18": "",
+            "nombre_real": "B17"
+        },
+        {
+            "B19": "P",
+            "nombre_real": ""
+        },
+        {
+            "B20": "P",
+            "nombre_real": "B18"
+        },
+        {
+            "B21": "P",
+            "nombre_real": "B19"
+        },
+        {
+            "B22": "",
+            "nombre_real": "B20"
+        },
+        {
+            "B23": "",
+            "nombre_real": "B21"
+        },
+        {
+            "B24": "",
+            "nombre_real": "B22"
+        },
+        {
+            "B25": "",
+            "nombre_real": "B23"
+        },
+        {
+            "B26": "",
+            "nombre_real": "B24"
+        },
+        {
+            "B27": "",
+            "nombre_real": "B25"
+        },
+        {
+            "B28": "",
+            "nombre_real": "B26"
+        },
+        {
+            "B29": "",
+            "nombre_real": "B27"
+        },
+        {
+            "B30": "",
+            "nombre_real": "B28"
+        },
+        {
+            "B31": "",
+            "nombre_real": "B29"
+        },
+        {
+            "B32": "P",
+            "nombre_real": ""
+        },
+        {
+            "B33": "P",
+            "nombre_real": "B30"
+        },
+        {
+            "B34": "P",
+            "nombre_real": "B31"
+        },
+        {
+            "B35": "",
+            "nombre_real": "B32"
+        },
+        {
+            "B36": "",
+            "nombre_real": "B33"
+        },
+        {
+            "C1": "",
+            "nombre_real": "C1"
+        },
+        {
+            "C2": "",
+            "nombre_real": "C2"
+        },
+        {
+            "C3": "",
+            "nombre_real": "C3"
+        },
+        {
+            "C4": "",
+            "nombre_real": "C4"
+        },
+        {
+            "C5": "P",
+            "nombre_real": ""
+        },
+        {
+            "C6": "P",
+            "nombre_real": "C5"
+        },
+        {
+            "C7": "P",
+            "nombre_real": "C6"
+        },
+        {
+            "C8": "",
+            "nombre_real": "C7"
+        },
+        {
+            "C9": "",
+            "nombre_real": "C8"
+        },
+        {
+            "C10": "",
+            "nombre_real": "C9"
+        },
+        {
+            "C11": "",
+            "nombre_real": "C10"
+        },
+        {
+            "C12": "",
+            "nombre_real": "C11"
+        },
+        {
+            "C13": "",
+            "nombre_real": "C12"
+        },
+        {
+            "C14": "",
+            "nombre_real": "C13"
+        },
+        {
+            "C15": "",
+            "nombre_real": "C14"
+        },
+        {
+            "C16": "",
+            "nombre_real": "C15"
+        },
+        {
+            "C17": "",
+            "nombre_real": "C16"
+        },
+        {
+            "C18": "",
+            "nombre_real": "C17"
+        },
+        {
+            "C19": "P",
+            "nombre_real": ""
+        },
+        {
+            "C20": "P",
+            "nombre_real": "C18"
+        },
+        {
+            "C21": "P",
+            "nombre_real": "C19"
+        },
+        {
+            "C22": "",
+            "nombre_real": "C20"
+        },
+        {
+            "C23": "",
+            "nombre_real": "C21"
+        },
+        {
+            "C24": "",
+            "nombre_real": "C22"
+        },
+        {
+            "C25": "",
+            "nombre_real": "C23"
+        },
+        {
+            "C26": "",
+            "nombre_real": "C24"
+        },
+        {
+            "C27": "",
+            "nombre_real": "C25"
+        },
+        {
+            "C28": "",
+            "nombre_real": "C26"
+        },
+        {
+            "C29": "",
+            "nombre_real": "C27"
+        },
+        {
+            "C30": "",
+            "nombre_real": "C28"
+        },
+        {
+            "C31": "",
+            "nombre_real": "C29"
+        },
+        {
+            "C32": "P",
+            "nombre_real": ""
+        },
+        {
+            "C33": "P",
+            "nombre_real": "C30"
+        },
+        {
+            "C34": "P",
+            "nombre_real": "C31"
+        },
+        {
+            "C35": "",
+            "nombre_real": "C32"
+        },
+        {
+            "C36": "",
+            "nombre_real": "C33"
+        },
+        {
+            "D1": "",
+            "nombre_real": "D1"
+        },
+        {
+            "D2": "",
+            "nombre_real": "D2"
+        },
+        {
+            "D3": "",
+            "nombre_real": "D3"
+        },
+        {
+            "D4": "",
+            "nombre_real": "D4"
+        },
+        {
+            "D5": "P",
+            "nombre_real": ""
+        },
+        {
+            "D6": "P",
+            "nombre_real": "D5"
+        },
+        {
+            "D7": "P",
+            "nombre_real": "D6"
+        },
+        {
+            "D8": "",
+            "nombre_real": "D7"
+        },
+        {
+            "D9": "",
+            "nombre_real": "D8"
+        },
+        {
+            "D10": "",
+            "nombre_real": "D9"
+        },
+        {
+            "D11": "",
+            "nombre_real": "D10"
+        },
+        {
+            "D12": "",
+            "nombre_real": "D11"
+        },
+        {
+            "D13": "",
+            "nombre_real": "D12"
+        },
+        {
+            "D14": "",
+            "nombre_real": "D13"
+        },
+        {
+            "D15": "",
+            "nombre_real": "D14"
+        },
+        {
+            "D16": "",
+            "nombre_real": "D15"
+        },
+        {
+            "D17": "",
+            "nombre_real": "D16"
+        },
+        {
+            "D18": "",
+            "nombre_real": "D17"
+        },
+        {
+            "D19": "P",
+            "nombre_real": ""
+        },
+        {
+            "D20": "P",
+            "nombre_real": "D18"
+        },
+        {
+            "D21": "P",
+            "nombre_real": "D19"
+        },
+        {
+            "D22": "",
+            "nombre_real": "D20"
+        },
+        {
+            "D23": "",
+            "nombre_real": "D21"
+        },
+        {
+            "D24": "",
+            "nombre_real": "D22"
+        },
+        {
+            "D25": "",
+            "nombre_real": "D23"
+        },
+        {
+            "D26": "",
+            "nombre_real": "D24"
+        },
+        {
+            "D27": "",
+            "nombre_real": "D25"
+        },
+        {
+            "D28": "",
+            "nombre_real": "D26"
+        },
+        {
+            "D29": "",
+            "nombre_real": "D27"
+        },
+        {
+            "D30": "",
+            "nombre_real": "D28"
+        },
+        {
+            "D31": "",
+            "nombre_real": "D29"
+        },
+        {
+            "D32": "P",
+            "nombre_real": ""
+        },
+        {
+            "D33": "P",
+            "nombre_real": "D30"
+        },
+        {
+            "D34": "P",
+            "nombre_real": "D31"
+        },
+        {
+            "D35": "",
+            "nombre_real": "D32"
+        },
+        {
+            "D36": "",
+            "nombre_real": "D33"
+        },
+        {
+            "E1": "N",
+            "nombre_real": "E1"
+        },
+        {
+            "E2": "N",
+            "nombre_real": "E2"
+        },
+        {
+            "E3": "N",
+            "nombre_real": "E3"
+        },
+        {
+            "E4": "N",
+            "nombre_real": "E4"
+        },
+        {
+            "E5": "P",
+            "nombre_real": ""
+        },
+        {
+            "E6": "P",
+            "nombre_real": "E5"
+        },
+        {
+            "E7": "P",
+            "nombre_real": "E6"
+        },
+        {
+            "E8": "",
+            "nombre_real": "E7"
+        },
+        {
+            "E9": "",
+            "nombre_real": "E8"
+        },
+        {
+            "E10": "",
+            "nombre_real": "E9"
+        },
+        {
+            "E11": "",
+            "nombre_real": "E10"
+        },
+        {
+            "E12": "",
+            "nombre_real": "E11"
+        },
+        {
+            "E13": "",
+            "nombre_real": "E12"
+        },
+        {
+            "E14": "",
+            "nombre_real": "E13"
+        },
+        {
+            "E15": "",
+            "nombre_real": "E14"
+        },
+        {
+            "E16": "",
+            "nombre_real": "E15"
+        },
+        {
+            "E17": "",
+            "nombre_real": "E16"
+        },
+        {
+            "E18": "",
+            "nombre_real": "E17"
+        },
+        {
+            "E19": "P",
+            "nombre_real": ""
+        },
+        {
+            "E20": "P",
+            "nombre_real": "E18"
+        },
+        {
+            "E21": "P",
+            "nombre_real": "E19"
+        },
+        {
+            "E22": "",
+            "nombre_real": "E20"
+        },
+        {
+            "E23": "",
+            "nombre_real": "E21"
+        },
+        {
+            "E24": "",
+            "nombre_real": "E22"
+        },
+        {
+            "E25": "",
+            "nombre_real": "E23"
+        },
+        {
+            "E26": "",
+            "nombre_real": "E24"
+        },
+        {
+            "E27": "",
+            "nombre_real": "E25"
+        },
+        {
+            "E28": "",
+            "nombre_real": "E26"
+        },
+        {
+            "E29": "",
+            "nombre_real": "E27"
+        },
+        {
+            "E30": "",
+            "nombre_real": "E28"
+        },
+        {
+            "E31": "",
+            "nombre_real": "E29"
+        },
+        {
+            "E32": "P",
+            "nombre_real": ""
+        },
+        {
+            "E33": "P",
+            "nombre_real": "E30"
+        },
+        {
+            "E34": "P",
+            "nombre_real": "E31"
+        },
+        {
+            "E35": "",
+            "nombre_real": "E32"
+        },
+        {
+            "E36": "",
+            "nombre_real": "E33"
+        },
+        {
+            "F1": "N",
+            "nombre_real": "F1"
+        },
+        {
+            "F2": "N",
+            "nombre_real": "F2"
+        },
+        {
+            "F3": "N",
+            "nombre_real": "F3"
+        },
+        {
+            "F4": "N",
+            "nombre_real": "F4"
+        },
+        {
+            "F5": "P",
+            "nombre_real": ""
+        },
+        {
+            "F6": "P",
+            "nombre_real": "F5"
+        },
+        {
+            "F7": "P",
+            "nombre_real": "F6"
+        },
+        {
+            "F8": "4",
+            "nombre_real": "F7"
+        },
+        {
+            "F9": "4",
+            "nombre_real": "F8"
+        },
+        {
+            "F10": "4",
+            "nombre_real": "F9"
+        },
+        {
+            "F11": "4",
+            "nombre_real": "F10"
+        },
+        {
+            "F12": "4",
+            "nombre_real": "F11"
+        },
+        {
+            "F13": "4",
+            "nombre_real": "F12"
+        },
+        {
+            "F14": "4",
+            "nombre_real": "F13"
+        },
+        {
+            "F15": "4",
+            "nombre_real": "F14"
+        },
+        {
+            "F16": "4",
+            "nombre_real": "F15"
+        },
+        {
+            "F17": "4",
+            "nombre_real": "F16"
+        },
+        {
+            "F18": "N",
+            "nombre_real": "F17"
+        },
+        {
+            "F19": "P",
+            "nombre_real": ""
+        },
+        {
+            "F20": "P",
+            "nombre_real": "F18"
+        },
+        {
+            "F21": "P",
+            "nombre_real": "F19"
+        },
+        {
+            "F22": "4",
+            "nombre_real": "F20"
+        },
+        {
+            "F23": "4",
+            "nombre_real": "F21"
+        },
+        {
+            "F24": "4",
+            "nombre_real": "F22"
+        },
+        {
+            "F25": "4",
+            "nombre_real": "F23"
+        },
+        {
+            "F26": "4",
+            "nombre_real": "F24"
+        },
+        {
+            "F27": "4",
+            "nombre_real": "F25"
+        },
+        {
+            "F28": "4",
+            "nombre_real": "F26"
+        },
+        {
+            "F29": "4",
+            "nombre_real": "F27"
+        },
+        {
+            "F30": "4",
+            "nombre_real": "F28"
+        },
+        {
+            "F31": "N",
+            "nombre_real": "F29"
+        },
+        {
+            "F32": "P",
+            "nombre_real": ""
+        },
+        {
+            "F33": "P",
+            "nombre_real": "F30"
+        },
+        {
+            "F34": "P",
+            "nombre_real": "F31"
+        },
+        {
+            "F35": "",
+            "nombre_real": "F32"
+        },
+        {
+            "F36": "",
+            "nombre_real": "F33"
+        },
+        {
+            "G1": "N",
+            "nombre_real": "G1"
+        },
+        {
+            "G2": "N",
+            "nombre_real": "G2"
+        },
+        {
+            "G3": "N",
+            "nombre_real": "G3"
+        },
+        {
+            "G4": "N",
+            "nombre_real": "G4"
+        },
+        {
+            "G5": "P",
+            "nombre_real": ""
+        },
+        {
+            "G6": "P",
+            "nombre_real": "G5"
+        },
+        {
+            "G7": "P",
+            "nombre_real": "G6"
+        },
+        {
+            "G8": "",
+            "nombre_real": "G7"
+        },
+        {
+            "G9": "",
+            "nombre_real": "G8"
+        },
+        {
+            "G10": "",
+            "nombre_real": "G9"
+        },
+        {
+            "G11": "",
+            "nombre_real": "G10"
+        },
+        {
+            "G12": "",
+            "nombre_real": "G11"
+        },
+        {
+            "G13": "",
+            "nombre_real": "G12"
+        },
+        {
+            "G14": "",
+            "nombre_real": "G13"
+        },
+        {
+            "G15": "",
+            "nombre_real": "G14"
+        },
+        {
+            "G16": "",
+            "nombre_real": "G15"
+        },
+        {
+            "G17": "",
+            "nombre_real": "G16"
+        },
+        {
+            "G18": "",
+            "nombre_real": "G17"
+        },
+        {
+            "G19": "P",
+            "nombre_real": ""
+        },
+        {
+            "G20": "P",
+            "nombre_real": "G18"
+        },
+        {
+            "G21": "P",
+            "nombre_real": "G19"
+        },
+        {
+            "G22": "",
+            "nombre_real": "G20"
+        },
+        {
+            "G23": "",
+            "nombre_real": "G21"
+        },
+        {
+            "G24": "",
+            "nombre_real": "G22"
+        },
+        {
+            "G25": "",
+            "nombre_real": "G23"
+        },
+        {
+            "G26": "",
+            "nombre_real": "G24"
+        },
+        {
+            "G27": "",
+            "nombre_real": "G25"
+        },
+        {
+            "G28": "",
+            "nombre_real": "G26"
+        },
+        {
+            "G29": "",
+            "nombre_real": "G27"
+        },
+        {
+            "G30": "",
+            "nombre_real": "G28"
+        },
+        {
+            "G31": "",
+            "nombre_real": "G29"
+        },
+        {
+            "G32": "P",
+            "nombre_real": ""
+        },
+        {
+            "G33": "P",
+            "nombre_real": "G30"
+        },
+        {
+            "G34": "P",
+            "nombre_real": "G31"
+        },
+        {
+            "G35": "",
+            "nombre_real": "G32"
+        },
+        {
+            "G36": "",
+            "nombre_real": "G33"
+        },
+        {
+            "H1": "N",
+            "nombre_real": "H1"
+        },
+        {
+            "H2": "N",
+            "nombre_real": "H2"
+        },
+        {
+            "H3": "N",
+            "nombre_real": "H3"
+        },
+        {
+            "H4": "N",
+            "nombre_real": "H4"
+        },
+        {
+            "H5": "P",
+            "nombre_real": ""
+        },
+        {
+            "H6": "P",
+            "nombre_real": "H5"
+        },
+        {
+            "H7": "P",
+            "nombre_real": "H6"
+        },
+        {
+            "H8": "",
+            "nombre_real": "H7"
+        },
+        {
+            "H9": "",
+            "nombre_real": "H8"
+        },
+        {
+            "H10": "",
+            "nombre_real": "H9"
+        },
+        {
+            "H11": "",
+            "nombre_real": "H10"
+        },
+        {
+            "H12": "",
+            "nombre_real": "H11"
+        },
+        {
+            "H13": "",
+            "nombre_real": "H12"
+        },
+        {
+            "H14": "",
+            "nombre_real": "H13"
+        },
+        {
+            "H15": "",
+            "nombre_real": "H14"
+        },
+        {
+            "H16": "",
+            "nombre_real": "H15"
+        },
+        {
+            "H17": "",
+            "nombre_real": "H16"
+        },
+        {
+            "H18": "",
+            "nombre_real": "H17"
+        },
+        {
+            "H19": "P",
+            "nombre_real": ""
+        },
+        {
+            "H20": "P",
+            "nombre_real": "H18"
+        },
+        {
+            "H21": "P",
+            "nombre_real": "H19"
+        },
+        {
+            "H22": "",
+            "nombre_real": "H20"
+        },
+        {
+            "H23": "",
+            "nombre_real": "H21"
+        },
+        {
+            "H24": "",
+            "nombre_real": "H22"
+        },
+        {
+            "H25": "",
+            "nombre_real": "H23"
+        },
+        {
+            "H26": "",
+            "nombre_real": "H24"
+        },
+        {
+            "H27": "",
+            "nombre_real": "H25"
+        },
+        {
+            "H28": "",
+            "nombre_real": "H26"
+        },
+        {
+            "H29": "",
+            "nombre_real": "H27"
+        },
+        {
+            "H30": "",
+            "nombre_real": "H28"
+        },
+        {
+            "H31": "",
+            "nombre_real": "H29"
+        },
+        {
+            "H32": "P",
+            "nombre_real": ""
+        },
+        {
+            "H33": "P",
+            "nombre_real": "H30"
+        },
+        {
+            "H34": "P",
+            "nombre_real": "H31"
+        },
+        {
+            "H35": "",
+            "nombre_real": "H32"
+        },
+        {
+            "H36": "",
+            "nombre_real": "H33"
+        },
+        {
+            "I1": "N",
+            "nombre_real": "I1"
+        },
+        {
+            "I2": "N",
+            "nombre_real": "I2"
+        },
+        {
+            "I3": "N",
+            "nombre_real": "I3"
+        },
+        {
+            "I4": "N",
+            "nombre_real": "I4"
+        },
+        {
+            "I5": "P",
+            "nombre_real": ""
+        },
+        {
+            "I6": "P",
+            "nombre_real": "I5"
+        },
+        {
+            "I7": "P",
+            "nombre_real": "I6"
+        },
+        {
+            "I8": "",
+            "nombre_real": "I7"
+        },
+        {
+            "I9": "",
+            "nombre_real": "I8"
+        },
+        {
+            "I10": "",
+            "nombre_real": "I9"
+        },
+        {
+            "I11": "",
+            "nombre_real": "I10"
+        },
+        {
+            "I12": "",
+            "nombre_real": "I11"
+        },
+        {
+            "I13": "",
+            "nombre_real": "I12"
+        },
+        {
+            "I14": "",
+            "nombre_real": "I13"
+        },
+        {
+            "I15": "",
+            "nombre_real": "I14"
+        },
+        {
+            "I16": "",
+            "nombre_real": "I15"
+        },
+        {
+            "I17": "",
+            "nombre_real": "I16"
+        },
+        {
+            "I18": "",
+            "nombre_real": "I17"
+        },
+        {
+            "I19": "P",
+            "nombre_real": ""
+        },
+        {
+            "I20": "P",
+            "nombre_real": "I18"
+        },
+        {
+            "I21": "P",
+            "nombre_real": "I19"
+        },
+        {
+            "I22": "",
+            "nombre_real": "I20"
+        },
+        {
+            "I23": "",
+            "nombre_real": "I21"
+        },
+        {
+            "I24": "",
+            "nombre_real": "I22"
+        },
+        {
+            "I25": "",
+            "nombre_real": "I23"
+        },
+        {
+            "I26": "",
+            "nombre_real": "I24"
+        },
+        {
+            "I27": "",
+            "nombre_real": "I25"
+        },
+        {
+            "I28": "",
+            "nombre_real": "I26"
+        },
+        {
+            "I29": "",
+            "nombre_real": "I27"
+        },
+        {
+            "I30": "",
+            "nombre_real": "I28"
+        },
+        {
+            "I31": "",
+            "nombre_real": "I29"
+        },
+        {
+            "I32": "P",
+            "nombre_real": ""
+        },
+        {
+            "I33": "P",
+            "nombre_real": "I30"
+        },
+        {
+            "I34": "P",
+            "nombre_real": "I31"
+        },
+        {
+            "I35": "",
+            "nombre_real": "I32"
+        },
+        {
+            "I36": "",
+            "nombre_real": "I33"
+        },
+        {
+            "J1": "N",
+            "nombre_real": "J1"
+        },
+        {
+            "J2": "N",
+            "nombre_real": "J2"
+        },
+        {
+            "J3": "N",
+            "nombre_real": "J3"
+        },
+        {
+            "J4": "N",
+            "nombre_real": "J4"
+        },
+        {
+            "J5": "P",
+            "nombre_real": ""
+        },
+        {
+            "J6": "P",
+            "nombre_real": "J5"
+        },
+        {
+            "J7": "P",
+            "nombre_real": "J6"
+        },
+        {
+            "J8": "",
+            "nombre_real": "J7"
+        },
+        {
+            "J9": "",
+            "nombre_real": "J8"
+        },
+        {
+            "J10": "",
+            "nombre_real": "J9"
+        },
+        {
+            "J11": "",
+            "nombre_real": "J10"
+        },
+        {
+            "J12": "",
+            "nombre_real": "J11"
+        },
+        {
+            "J13": "",
+            "nombre_real": "J12"
+        },
+        {
+            "J14": "",
+            "nombre_real": "J13"
+        },
+        {
+            "J15": "",
+            "nombre_real": "J14"
+        },
+        {
+            "J16": "",
+            "nombre_real": "J15"
+        },
+        {
+            "J17": "",
+            "nombre_real": "J16"
+        },
+        {
+            "J18": "",
+            "nombre_real": "J17"
+        },
+        {
+            "J19": "P",
+            "nombre_real": ""
+        },
+        {
+            "J20": "P",
+            "nombre_real": "J18"
+        },
+        {
+            "J21": "P",
+            "nombre_real": "J19"
+        },
+        {
+            "J22": "",
+            "nombre_real": "J20"
+        },
+        {
+            "J23": "",
+            "nombre_real": "J21"
+        },
+        {
+            "J24": "",
+            "nombre_real": "J22"
+        },
+        {
+            "J25": "",
+            "nombre_real": "J23"
+        },
+        {
+            "J26": "",
+            "nombre_real": "J24"
+        },
+        {
+            "J27": "",
+            "nombre_real": "J25"
+        },
+        {
+            "J28": "",
+            "nombre_real": "J26"
+        },
+        {
+            "J29": "",
+            "nombre_real": "J27"
+        },
+        {
+            "J30": "",
+            "nombre_real": "J28"
+        },
+        {
+            "J31": "",
+            "nombre_real": "J29"
+        },
+        {
+            "J32": "P",
+            "nombre_real": ""
+        },
+        {
+            "J33": "P",
+            "nombre_real": "J30"
+        },
+        {
+            "J34": "P",
+            "nombre_real": "J31"
+        },
+        {
+            "J35": "",
+            "nombre_real": "J32"
+        },
+        {
+            "J36": "",
+            "nombre_real": "J33"
+        },
+        {
+            "K1": "N",
+            "nombre_real": "K1"
+        },
+        {
+            "K2": "N",
+            "nombre_real": "K2"
+        },
+        {
+            "K3": "N",
+            "nombre_real": "K3"
+        },
+        {
+            "K4": "N",
+            "nombre_real": "K4"
+        },
+        {
+            "K5": "P",
+            "nombre_real": ""
+        },
+        {
+            "K6": "P",
+            "nombre_real": "K5"
+        },
+        {
+            "K7": "P",
+            "nombre_real": "K6"
+        },
+        {
+            "K8": "N",
+            "nombre_real": "K7"
+        },
+        {
+            "K9": "N",
+            "nombre_real": "K8"
+        },
+        {
+            "K10": "S",
+            "nombre_real": "K9"
+        },
+        {
+            "K11": "S",
+            "nombre_real": "K10"
+        },
+        {
+            "K12": "",
+            "nombre_real": "K11"
+        },
+        {
+            "K13": "",
+            "nombre_real": "K12"
+        },
+        {
+            "K14": "",
+            "nombre_real": "K13"
+        },
+        {
+            "K15": "",
+            "nombre_real": "K14"
+        },
+        {
+            "K16": "",
+            "nombre_real": "K15"
+        },
+        {
+            "K17": "",
+            "nombre_real": "K16"
+        },
+        {
+            "K18": "",
+            "nombre_real": "K17"
+        },
+        {
+            "K19": "P",
+            "nombre_real": ""
+        },
+        {
+            "K20": "P",
+            "nombre_real": "K18"
+        },
+        {
+            "K21": "P",
+            "nombre_real": "K19"
+        },
+        {
+            "K22": "",
+            "nombre_real": "K20"
+        },
+        {
+            "K23": "",
+            "nombre_real": "K21"
+        },
+        {
+            "K24": "",
+            "nombre_real": "K22"
+        },
+        {
+            "K25": "",
+            "nombre_real": "K23"
+        },
+        {
+            "K26": "",
+            "nombre_real": "K24"
+        },
+        {
+            "K27": "",
+            "nombre_real": "K25"
+        },
+        {
+            "K28": "",
+            "nombre_real": "K26"
+        },
+        {
+            "K29": "",
+            "nombre_real": "K27"
+        },
+        {
+            "K30": "",
+            "nombre_real": "K28"
+        },
+        {
+            "K31": "",
+            "nombre_real": "K29"
+        },
+        {
+            "K32": "P",
+            "nombre_real": ""
+        },
+        {
+            "K33": "P",
+            "nombre_real": "K30"
+        },
+        {
+            "K34": "P",
+            "nombre_real": "K31"
+        },
+        {
+            "K35": "",
+            "nombre_real": "K32"
+        },
+        {
+            "K36": "",
+            "nombre_real": "K33"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+<div class="movie-selector">
+    <div class="row clearfix">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="form-group">
+                <label for="query" class="control-label">Busqueda:</label>
+                <input type="text" name="query" ng-model="movieCtl.query" id="query" class="form-control">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9">
+            <div ng-hide="movieCtl.pelicula_valida">
+                <div class="row clearfix" ng-repeat="funcion in movieCtl.cartelera | filter:movieCtl.query | startFrom:movieCtl.paginacion_actual*movieCtl.paginacion_por_pagina | limitTo:movieCtl.paginacion_por_pagina">
+                    <div class="movie-row">
+	                	<div class="pic-holder">
+	                		<img src="http://placehold.it/150x150" ng-src="{{funcion.imagen}}" alt="" class="img-responsive movie-thumb img-responsive">
+	                	</div>
+                        <h4 class="row-heading">
+                        	<i class="glyphicon glyphicon-asterisk" ng-if="funcion.numerado == 'P'"></i>
+                            <a ng-href="#/mapa/{{funcion.funcion_id}}">
+                                {{ funcion.nombre_pelicula }}
+                            </a>
+                        </h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <strong>Sala:</strong> <span>{{funcion.sala}}</span>
+                            </li>
+                            <li>
+                                <strong>Fecha:</strong> <span>{{ funcion.fecha | date:'dd/MM/yyyy' }}</span>
+                            </li>
+                            <li>
+                                <strong>Hora:</strong> <span>{{ funcion.hora | horaNumerica }}</span>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>  
+    </div>
+        <nav class="text-center">
+            <ul class="pagination">
+                <li>
+                    <a ng-click="movieCtl.paginaAnterior()">&laquo;</a>
+                </li>
+                <li ng-repeat="i in [] | range:movieCtl.numeroPaginas() track by $index" ng-class="{active: $index == movieCtl.paginacion_actual}">
+                    <a ng-click="movieCtl.pagina($index)">{{$index+1}}</a>
+                </li>
+                <li>
+                    <a ng-click="movieCtl.paginaSiguiente()">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </nav>
+</div>

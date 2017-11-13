@@ -1,0 +1,602 @@
+[
+  {
+    "funcion_id": "20150803102F1",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-03",
+    "sala": "02",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 10
+  },
+  {
+    "funcion_id": "20150809103F1",
+    "nombre_pelicula": "POLTERGEIST (3D) (DOB)",
+    "fecha": "2015-08-09",
+    "sala": "03",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150808102F1",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-08",
+    "sala": "02",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150803103F1",
+    "nombre_pelicula": "POLTERGEIST (3D) (DOB)",
+    "fecha": "2015-08-03",
+    "sala": "03",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 45
+  },
+  {
+    "funcion_id": "20150807103F1",
+    "nombre_pelicula": "POLTERGEIST (3D) (DOB)",
+    "fecha": "2015-08-07",
+    "sala": "03",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150807102F1",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-07",
+    "sala": "02",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150804102F1",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-04",
+    "sala": "02",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150804103F1",
+    "nombre_pelicula": "POLTERGEIST (3D) (DOB)",
+    "fecha": "2015-08-04",
+    "sala": "03",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150806103F1",
+    "nombre_pelicula": "POLTERGEIST (3D) (DOB)",
+    "fecha": "2015-08-06",
+    "sala": "03",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150806102F1",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-06",
+    "sala": "02",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150805102F1",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-05",
+    "sala": "02",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150808103F1",
+    "nombre_pelicula": "POLTERGEIST (3D) (DOB)",
+    "fecha": "2015-08-08",
+    "sala": "03",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150805103F1",
+    "nombre_pelicula": "POLTERGEIST (3D) (DOB)",
+    "fecha": "2015-08-05",
+    "sala": "03",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150810103F1",
+    "nombre_pelicula": "POLTERGEIST (3D) (DOB)",
+    "fecha": "2015-08-10",
+    "sala": "03",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150801102F1",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-01",
+    "sala": "02",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 10
+  },
+  {
+    "funcion_id": "20150801103F1",
+    "nombre_pelicula": "POLTERGEIST (3D) (DOB)",
+    "fecha": "2015-08-01",
+    "sala": "03",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 45
+  },
+  {
+    "funcion_id": "20150810102F1",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-10",
+    "sala": "02",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150802103F1",
+    "nombre_pelicula": "POLTERGEIST (3D) (DOB)",
+    "fecha": "2015-08-02",
+    "sala": "03",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 45
+  },
+  {
+    "funcion_id": "20150802102F1",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-02",
+    "sala": "02",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 10
+  },
+  {
+    "funcion_id": "20150809102F1",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-09",
+    "sala": "02",
+    "hora": "1630",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150809102F2",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-09",
+    "sala": "02",
+    "hora": "1800",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150808102F2",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-08",
+    "sala": "02",
+    "hora": "1800",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150806102F2",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-06",
+    "sala": "02",
+    "hora": "1800",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150810102F2",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-10",
+    "sala": "02",
+    "hora": "1800",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150808101F1",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-08",
+    "sala": "01",
+    "hora": "1800",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150807101F1",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-07",
+    "sala": "01",
+    "hora": "1800",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150810101F1",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-10",
+    "sala": "01",
+    "hora": "1800",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150807102F2",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-07",
+    "sala": "02",
+    "hora": "1800",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150809101F1",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-09",
+    "sala": "01",
+    "hora": "1800",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150803101F1",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-03",
+    "sala": "01",
+    "hora": "1800",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150801101F1",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-01",
+    "sala": "01",
+    "hora": "1800",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150804101F1",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-04",
+    "sala": "01",
+    "hora": "1800",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150803102F2",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-03",
+    "sala": "02",
+    "hora": "1800",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 10
+  },
+  {
+    "funcion_id": "20150804102F2",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-04",
+    "sala": "02",
+    "hora": "1800",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150802101F1",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-02",
+    "sala": "01",
+    "hora": "1800",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150806101F1",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-06",
+    "sala": "01",
+    "hora": "1800",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150805101F1",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-05",
+    "sala": "01",
+    "hora": "1800",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150801102F2",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-01",
+    "sala": "02",
+    "hora": "1800",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 10
+  },
+  {
+    "funcion_id": "20150805102F2",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-05",
+    "sala": "02",
+    "hora": "1800",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150802102F2",
+    "nombre_pelicula": "VENGADORES: ERA ULTRON (3D) (DOB)",
+    "fecha": "2015-08-02",
+    "sala": "02",
+    "hora": "1800",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 10
+  },
+  {
+    "funcion_id": "20150802103F2",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-02",
+    "sala": "03",
+    "hora": "1845",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 45
+  },
+  {
+    "funcion_id": "20150808103F2",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-08",
+    "sala": "03",
+    "hora": "1845",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150804103F2",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-04",
+    "sala": "03",
+    "hora": "1845",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150809103F2",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-09",
+    "sala": "03",
+    "hora": "1845",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150801103F2",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-01",
+    "sala": "03",
+    "hora": "1845",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 45
+  },
+  {
+    "funcion_id": "20150805103F2",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-05",
+    "sala": "03",
+    "hora": "1845",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150810103F2",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-10",
+    "sala": "03",
+    "hora": "1845",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150807103F2",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-07",
+    "sala": "03",
+    "hora": "1845",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150803103F2",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-03",
+    "sala": "03",
+    "hora": "1845",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 45
+  },
+  {
+    "funcion_id": "20150806103F2",
+    "nombre_pelicula": "MEÑIQUE: PULGARCITO (HD) (DOB)",
+    "fecha": "2015-08-06",
+    "sala": "03",
+    "hora": "1845",
+    "numerado": "",
+    "preventa": "",
+    "asientos_disponibles": 0
+  },
+  {
+    "funcion_id": "20150803101F2",
+    "nombre_pelicula": "MACHO PERUANO QUE SE RESPETA (HD) (DOB)",
+    "fecha": "2015-08-03",
+    "sala": "01",
+    "hora": "1900",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150801101F2",
+    "nombre_pelicula": "MACHO PERUANO QUE SE RESPETA (HD) (DOB)",
+    "fecha": "2015-08-01",
+    "sala": "01",
+    "hora": "1900",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150806101F2",
+    "nombre_pelicula": "MACHO PERUANO QUE SE RESPETA (HD) (DOB)",
+    "fecha": "2015-08-06",
+    "sala": "01",
+    "hora": "1900",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150805101F2",
+    "nombre_pelicula": "MACHO PERUANO QUE SE RESPETA (HD) (DOB)",
+    "fecha": "2015-08-05",
+    "sala": "01",
+    "hora": "1900",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150810101F2",
+    "nombre_pelicula": "MACHO PERUANO QUE SE RESPETA (HD) (DOB)",
+    "fecha": "2015-08-10",
+    "sala": "01",
+    "hora": "1900",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150807101F2",
+    "nombre_pelicula": "MACHO PERUANO QUE SE RESPETA (HD) (DOB)",
+    "fecha": "2015-08-07",
+    "sala": "01",
+    "hora": "1900",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150804101F2",
+    "nombre_pelicula": "MACHO PERUANO QUE SE RESPETA (HD) (DOB)",
+    "fecha": "2015-08-04",
+    "sala": "01",
+    "hora": "1900",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150809101F2",
+    "nombre_pelicula": "MACHO PERUANO QUE SE RESPETA (HD) (DOB)",
+    "fecha": "2015-08-09",
+    "sala": "01",
+    "hora": "1900",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150808101F2",
+    "nombre_pelicula": "MACHO PERUANO QUE SE RESPETA (HD) (DOB)",
+    "fecha": "2015-08-08",
+    "sala": "01",
+    "hora": "1900",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  },
+  {
+    "funcion_id": "20150802101F2",
+    "nombre_pelicula": "MACHO PERUANO QUE SE RESPETA (HD) (DOB)",
+    "fecha": "2015-08-02",
+    "sala": "01",
+    "hora": "1900",
+    "numerado": "P",
+    "preventa": "",
+    "asientos_disponibles": 190
+  }
+]

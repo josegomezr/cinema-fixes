@@ -1,0 +1,8 @@
+
+<h1>{{ mapCtl.funcion.nombre_pelicula }}</h1>
+<strong>Fecha: </strong><span>{{ mapCtl.funcion.fecha | invertirFecha}} {{ mapCtl.funcion.hora | horaNumerica}}</span> <br>
+<strong>Sala: </strong><span>{{ mapCtl.funcion.sala }}</span> <br>
+<strong>Asientos: </strong><span>{{ mapCtl.funcion.asientos_disponibles }}</span> <br>
+
+
+<div class="map-preview" ng-include="'partials/seat-allocation.html'"></div>

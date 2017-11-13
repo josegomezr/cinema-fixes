@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prueba Cine</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<!-- esta es la configuración modular de angualr, para que no interfiera con cualquiera otra cosa -->
+	<!-- que este antes en un sitio web -->
+	<!-- dentro de section[ng-app] estará funcionando angular y SOLO dentro de ese elemento. -->
+	<br>
+	<section ng-app="cinema-room" ng-cloak>
+		<div class="container">
+			<div ng-view></div>
+		</div>
+	</section>
+	<script src="bower_components/lodash/lodash.min.js"></script>	
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>	
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>	
+	<script src="bower_components/angular/angular.min.js"></script>	
+	<script src="bower_components/angular-route/angular-route.min.js"></script>	
+	
+	<script src="js/app.js"></script>	
+	<script src="js/filters.js"></script>	
+	<script src="js/services.js"></script>	
+	<script src="js/controllers.js"></script>	
+	<script src="js/routes.js"></script>	
+</body>
+</html>

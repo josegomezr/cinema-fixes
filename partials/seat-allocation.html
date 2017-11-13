@@ -1,0 +1,64 @@
+ <div class="reserva-asientos">
+	<div ng-controller="GridController as gridCtl" ng-show="gridCtl.parentCtl.preview || (!gridCtl.parentCtl.seleccionandoTickets && gridCtl.parentCtl.total_boletos)">
+		<h2>
+			Asientos <small ng-if="!gridCtl.parentCtl.preview">{{gridCtl.asientosTomados}}/{{gridCtl.maxAsientos}}</small>
+		</h2>
+		<p ng-if="!gridCtl.parentCtl.preview">
+			<strong>Asientos Seleccionados:</strong> 
+			<span ng-repeat="asiento in gridCtl.asientos_reservados">
+				<span class="label label-success" ng-bind="asiento"></span>
+			</span>
+		</p>
+		<div class="block-center text-center">
+			<div class="cinema-grid">
+				
+				
+				<div class="cinema-screen">
+					<p>Pantalla</p>
+				</div>
+				<br>
+				<div class="room-row" ng-repeat="(c_idx, c_val) in gridCtl.mapa" ng-class="{invisible: c_val.name == '-'}">
+					<span class="btn btn-xs room-cell" 
+					ng-click="gridCtl.conmutarAsiento(r_val.col,r_val.row)" 
+					ng-repeat="(r_idx, r_val) in gridCtl.mapa[c_idx]" 
+					ng-class="{
+						'btn-danger': r_val.no_disponible, 
+						'invisible': r_val.pasillo,  
+						'btn-warning': r_val.no_usado, 
+						'btn-disabled': r_val.ocupado, 
+						'btn-success': r_val.tomado,
+						'btn-default': !(r_val.no_disponible || r_val.pasillo || r_val.no_usado || r_val.ocupado || r_val.tomado)
+					}">
+					<i class="glyphicon glyphicon-print"></i>
+						<span class="coord">
+							<span ng-bind="r_val.nombre_mostrar"></span>
+						</span>
+					</span>
+				</div>
+				<div class="clearfix"></div>
+				
+				<div class="clearfix"></div>
+			</div>
+			<br>
+			<div class="text-center">
+				<span class="btn btn-default btn-xs">Disponible</span>
+				<span class="btn btn-warning btn-xs">No utilizado</span>
+				<span class="btn btn-disabled btn-xs">Ocupado</span>
+				<span class="btn btn-danger btn-xs">No disponible</span>
+				<span class="btn btn-success btn-xs">Seleccionado</span>
+			</div>
+		</div>
+		<p>&nbsp;</p>
+		<div class="row clearfix" ng-show="!gridCtl.parentCtl.preview">
+			<div class="col-xs-12 col-sm-4">
+				<button type="button" class="btn btn-default btn-block" ng-click="gridCtl.parentCtl.seleccionandoTickets = true">Cancelar</button>
+			</div>
+			<div class="col-xs-12 col-sm-8">
+				<button ng-class="{
+				'disabled': gridCtl.asientosTomados < gridCtl.maxAsientos
+				}" class="btn btn-primary btn-block" ng-disabled="gridCtl.asientosTomados < gridCtl.maxAsientos" ng-click="gridCtl.parentCtl.reservar_con_asiento(gridCtl.asientos_reservados)">
+					Siguiente</button>
+			</div>
+		</div>
+	</div>
+</div>

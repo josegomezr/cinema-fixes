@@ -1,0 +1,119 @@
+body{
+	padding-bottom: 20px;
+}
+*{
+	box-sizing: border-box;
+}
+
+.room-row {
+	vertical-align: middle;
+	display: block;
+}
+
+.room-cell {
+    text-align: center;
+    margin: 2px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+.map-preview .room-cell i.glyphicon {
+    position: relative;
+    top: -4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.coord{
+	display: none;
+}
+
+.map-preview .coord{
+    position: absolute;
+    font-size: 12px;
+    margin-left: -4px;
+    margin-top: -16px;
+    display: block;
+    text-align: center;
+    width: 28px;
+    font-weight: bold;
+}
+
+.room-cell.btn-default{
+	color: rgba(3,3,3,.6);
+}
+
+.btn-disabled{
+	color: #fff;
+    background-color: #949494;
+    border-color: #878787;
+}
+
+.cinema-screen{
+    border-bottom: 50px solid rgba(86, 86, 86, 0.43);
+    border-left: 27px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cinema-screen p{
+    position: relative;
+    top: 8px;
+    font-size: 25px;
+    color: white;
+    transform: rotate(180deg);
+}
+
+.alert-disabled{
+	color: #fff;
+    background-color: #BBB;
+    border-color: #999;
+}
+
+.white-bg{
+	background-color: white !important;
+}
+
+.movie-row{
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 10px 10px;
+	margin-bottom: .5em;
+}
+
+.movie-row .pic-holder{
+	width: 150px;
+	height: 150px;
+	margin-right: 10px;
+	float: left;
+}
+
+@media (max-width: 768px){
+	.movie-row .pic-holder{
+		float: none;
+	}
+}
+
+.row-heading a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.reservador-boletos thead tr, .reservador-boletos tfoot tr{
+	background: #F0F0F0;
+}
+
+.cinema-grid{
+	background-color: rgba(210, 210, 210, 0.75);
+    text-align: center;
+    border-radius: 6px;
+}
+
+
+.movie-thumb{
+	width: 100%;
+	height: 100%;
+}
