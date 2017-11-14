@@ -55,7 +55,6 @@
 
 				datos.asientos = asientos;
 				datos.funcion_id = fid;
-				console.log(datos)
 				var req = {
 				 method: 'POST',
 				 url: 'http://148.102.26.60/reservas',

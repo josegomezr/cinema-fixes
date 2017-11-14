@@ -288,14 +288,10 @@
         
         function buscarCelda(row, col){
             var coord = row+col;
-            for(var i in self.mapa){
-                for(var j in self.mapa[i]){
-                    var cell = self.mapa[i][j];
-                    if(cell.coord == coord){
-                        return cell;
-                    }
-                }
-            }
+            var fila = row.charCodeAt(0)-65
+            return _.filter(self.mapa[fila], function(obj){
+                return obj.nombre_mostrar == coord
+            })[0]
         }
         
         this.marcar_tomado = function(row, col){
