@@ -117,30 +117,6 @@
             }
         }
 
-        this.reservar_con_asiento = function(asientos){
-            asientos = _.map(asientos, function(e){
-                var coord = e.split('-')
-                return coord.join('');
-            })
-
-            if(this.hash_reserva == null){
-                SalaService
-                .reserve(this.funcion.funcion_id, this.boletos)
-                .then(
-                    function(data){
-                        $rootScope.resumen.reserva = data;
-                        self.hash_reserva = data.hash_reserva;
-                        self.reservar_asientos(asientos);
-                    }, 
-                    function(reason){
-                        console.log("[error] sala:reserve", reason);
-                        alert("[error] sala:reserve")
-                    }
-                );
-            }else{
-                self.reservar_asientos(asientos);
-            }
-        }
         this.reservar_asientos = function(asientos){
             SalaService
             .reserveSeats(this.hash_reserva, asientos)
@@ -160,11 +136,35 @@
     }
     app.controller('EnquiryController', ['tarifas', 'funcion', 'SalaService', '$rootScope', '$location', EnquiryController]);
     
-    function MapController (funcion, $rootScope, $location) {
+    function MapController(funcion, $rootScope, $location, SalaService) {
         this.preview = true;
         this.funcion = funcion;
+        this.reservar_con_asiento = function (asientos) {
+            console.log('maspdasd')
+        }
+        this.reservar_con_asiento = function (asientos) {
+            console.log("hiard!");
+            if (this.hash_reserva == null) {
+                console.log("making reserva!");
+                SalaService
+                    .reserve(this.funcion.funcion_id, this.boletos)
+                    .then(
+                    function (data) {
+                        $rootScope.resumen.reserva = data;
+                        self.hash_reserva = data.hash_reserva;
+                        self.reservar_asientos(asientos);
+                    },
+                    function (reason) {
+                        console.log("[error] sala:reserve", reason);
+                        alert("[error] sala:reserve")
+                    }
+                    );
+            } else {
+                self.reservar_asientos(asientos);
+            }
+        }
     }
-    app.controller('MapController', ['funcion', '$rootScope', '$location', MapController]);
+    app.controller('MapController', ['funcion', '$rootScope', '$location', 'SalaService', MapController]);
 
 
 
@@ -238,6 +238,59 @@
             interpretarMapa(data.mapa)
         }
 
+        
+        this.buscar_cell = function(map, row, col){
+            var cell = (row+'')+(col+'');
+            var result = _.filter(map, function(obj){
+                return obj.coord == cell
+            })
+            
+            if (result.length == 0 ){
+                //throw new Error("Cell not found")
+                return {nombre_real: 'X'};
+                
+            }
+            
+            return result.pop();
+        }
+        
+        this.mapa = [];
+        this.hash_mapa = {};
+        
+        this.maxAsientos = 0;
+        this.asientosTomados = 0;
+       
+        function buscarCelda(row, col, key) {
+            key = key || 'nombre_mostrar';
+            var coord = row + col;
+            var fila = row.charCodeAt(0) - 65
+            return _.filter(self.mapa[fila], function (obj) {
+                return obj[key] == coord
+            })[0]
+        }
+        function buscarCeldaRecursive(row, col, key) {
+            key = key || 'nombre_mostrar';
+            var coord = row + col;
+
+            for (var i in self.mapa){
+                var filaArr = self.mapa[i];
+                for(var j in filaArr){
+                    var cellObj = filaArr[j];
+                    if (cellObj[key] == coord) {
+                        return cellObj;
+                    }
+                }
+            }
+            return null;
+        }
+        
+        function getReverseCell(row, col) {
+            var top = self.columnas.length - 1 - (row.charCodeAt(0) - 65);
+            var left = self.filas.length - col
+
+            return _.get(self.mapa, [top, left].join('.'));
+        }
+        
         // Estas funciones nos sirven para cambiar la clase de cada
         // asiento facilmente
         // primero un helper para saber si un asiento está reservado (status en el mapa -> N, S o P)
@@ -245,26 +298,14 @@
             return this.asientos_predeterminados.hasOwnProperty(row+col);
         }
         
-        this.buscar_cell = function(map, row, col){
-            var cell = (row+'')+(col+'');
-            var result = _.filter(map, function(obj){
-                return obj.coord == cell
-            })
-
-            if (result.length == 0 ){
-                //throw new Error("Cell not found")
-                 return {nombre_real: 'X'};
-            
-            }
-
-            return result.pop();
-        }
-        
         this.esta_no_disponible = function (row, col) {
             return this.esta_reservado(row, col) && this.asientos_predeterminados[row+col] == 'N';
         }
         this.raw_data_ocupado = function (row, col) {
-            return this.raw_data.asientos_ocupados.indexOf(row + col) !== -1;
+
+            var cellObj = getReverseCell(row, col);
+            
+            return this.raw_data.asientos_ocupados.indexOf(cellObj.nombre_mostrar) !== -1;
         }
         this.esta_ocupado = function (coord) {
             return this.raw_data.asientos_ocupados.indexOf(coord) !== -1;
@@ -278,52 +319,49 @@
         }
 
         this.esta_tomado = function (row, col) {
-            return this.asientos_reservados.indexOf([row, col].join('-')) !== -1;
+            return this.asientos_reservados.indexOf([row, col].join('')) !== -1;
         }
 
-        this.mapa = [];
-        
-        this.maxAsientos = 0;
-        this.asientosTomados = 0;
-        
-        function buscarCelda(row, col){
-            var coord = row+col;
-            var fila = row.charCodeAt(0)-65
-            return _.filter(self.mapa[fila], function(obj){
-                return obj.nombre_mostrar == coord
-            })[0]
-        }
         
         this.marcar_tomado = function(row, col){
-            var cell = buscarCelda(row, col)
+            var cell = getReverseCell(row, col)
             cell.tomado = true;
         }
 
         this.marcar_libre = function(row, col){
-            var cell = buscarCelda(row, col)
+            var cell = getReverseCell(row, col)
             cell.tomado = false;
         }
 
         this.marcar_ocupado = function(row, col){
-            var cell = buscarCelda(row, col)
+            var cell = getReverseCell(row, col)
             cell.no_disponible = cell.ocupado = cell.pasillo = cell.no_usado = cell.tomado = false;
             cell.reservado = true;
               cell.ocupado = true;
         }
 
+        this.esta_tomado_visible = function(row, col){
+            var cellObj = buscarCeldaRecursive(row, col);
+            return cellObj.tomado;
+        }
+        this.marcar_ocupado_visible = function(row, col){
+            var cellObj = buscarCeldaRecursive(row, col);
+            cellObj.no_disponible = cellObj.ocupado = cellObj.pasillo = cellObj.no_usado = cellObj.tomado = false;
+            cellObj.reservado = true;
+            cellObj.ocupado = true;
+        }
+
         this.conmutarAsiento = function (row, col) {
-            
             if(
-                this.maxAsientos == 0
-                || this.esta_reservado(row, col) 
-                || this.raw_data_ocupado(row, col) 
+                this.esta_reservado(row, col) 
+                && this.raw_data_ocupado(row, col) 
                 ){
-                console.log(row, col, '-- status---', 'max?', this.maxAsientos == 0, 'reservado?', this.esta_reservado(row, col), 'ocupado?', this.raw_data_ocupado(row, col) )
+                console.log(row, col, '-- status---', 'reservado?', this.esta_reservado(row, col), 'ocupado?', this.raw_data_ocupado(row, col) )
 
                 return
             }
 
-            var coord = [row, col].join('-');
+            var coord = [row, col].join('');
 
             if( this.esta_tomado(row,col) ) {
                 var idx = this.asientos_reservados.indexOf(coord);
@@ -336,11 +374,11 @@
                 this.asientos_reservados.push(coord);
             }
             
-            if(this.asientosTomados > this.maxAsientos){
-                var oldCoord = this.asientos_reservados.shift().split('-');
-                this.marcar_libre(oldCoord[0], oldCoord[1]);
-                this.asientosTomados--;
-            }
+            // if(this.asientosTomados > this.maxAsientos){
+            //     var oldCoord = this.asientos_reservados.shift().split('-');
+            //     this.marcar_libre(oldCoord[0], oldCoord[1]);
+            //     this.asientosTomados--;
+            // }
             
             $rootScope.$broadcast('asiento_cambiado', this.asientos_reservados);
             refrescarAsientosUsados();
@@ -356,13 +394,13 @@
                 _.each(data.asientos_ocupados.split(','), function(e, k){
                     var col = e[0];
                     var row = e.substr(1);
-                    var coord = [col, row].join('-');
-                    if(self.esta_tomado(col, row)){
+                    var coord = [col, row].join('');
+                    if (self.esta_tomado_visible(col, row)){
                         var idx = self.asientos_reservados.indexOf(coord);
                         self.asientos_reservados.splice(idx, 1);
                         self.asientosTomados--;
                     }
-                    self.marcar_ocupado(col, row);
+                    self.marcar_ocupado_visible(col, row);
                 });
 
             }, function(reason){
@@ -377,7 +415,7 @@
             self.asientosTomados = 0;
             while(self.asientos_reservados.length){
                 var coord = self.asientos_reservados.pop();
-                var oldCoord = coord.split('-');
+                var oldCoord = [coord[0], coord.substring(1)];
                 self.marcar_libre(oldCoord[0], oldCoord[1]);
             }
         })
@@ -387,9 +425,8 @@
         // para popular el arreglo de asientos reservados
 
         function convertirIdx (idx) {
-            var r_idx = idx.split('')
-            var row = r_idx.shift()
-            var col = r_idx.join('');
+            var row = idx[0]
+            var col = idx.substring(1);
             return [row, parseFloat(col)]
         }
         // esta función toma el mapa cuya estructura es 
@@ -456,12 +493,13 @@
                     cell.tomado = self.esta_tomado(cell.col, cell.row);
                     cell.nombre_mostrar = cellData.nombre_real;
                     row.push(cell);
+                    self.hash_mapa[cell.coord] = cell;
                 }
                 self.mapa.push(row);
             }
 
         }
-
+        console.log(self.hash_mapa)
         prepararDatos(this.raw_data);
         refrescarAsientosUsados();
     }

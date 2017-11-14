@@ -46,14 +46,18 @@
 			</div>
 		</div>
 		<p>&nbsp;</p>
-		<div class="row clearfix" ng-show="!gridCtl.parentCtl.preview">
+		<h4>Asientos Seleccionados</h4>
+		<span ng-repeat="(c_idx, c_val) in gridCtl.asientos_reservados" class="btn btn-xs btn-success btn-margensito">
+			 {{ gridCtl.hash_mapa[c_val].nombre_mostrar }}
+		</span>
+		
+		<p>&nbsp;</p>
+		<div class="row clearfix" ng-show="false">
 			<div class="col-xs-12 col-sm-4">
-				<button type="button" class="btn btn-default btn-block" ng-click="gridCtl.parentCtl.seleccionandoTickets = true">Cancelar</button>
+				<a href="#/" class="btn btn-default btn-block" ng-click="gridCtl.goHome()">Cancelar</a>
 			</div>
 			<div class="col-xs-12 col-sm-8">
-				<button ng-class="{
-				'disabled': gridCtl.asientosTomados < gridCtl.maxAsientos
-				}" class="btn btn-primary btn-block" ng-disabled="gridCtl.asientosTomados < gridCtl.maxAsientos" ng-click="gridCtl.parentCtl.reservar_con_asiento(gridCtl.asientos_reservados)">
+				<button class="btn btn-primary btn-block" ng-click="gridCtl.parentCtl.reservar_con_asiento(gridCtl.asientos_reservados)">
 					Siguiente</button>
 			</div>
 		</div>
