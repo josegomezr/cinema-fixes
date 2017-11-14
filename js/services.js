@@ -205,7 +205,8 @@
 			getByFID: function(fid){
 				// @todo integrar a rest.
 				var defer = $q.defer();
-				$http.get('http://148.102.26.60/sala/' + fid, {
+                // $http.get('http://148.102.26.60/sala/' + fid, {
+				$http.get('http://localhost:8000/json/sala.json', {
 					headers: {
 						'Authorization': apiKey
 					}

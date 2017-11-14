@@ -312,8 +312,7 @@
         }
 
         this.conmutarAsiento = function (row, col) {
-            if(this.parentCtl.preview)
-                return;
+            
             if(
                 this.maxAsientos == 0
                 || this.esta_reservado(row, col) 
