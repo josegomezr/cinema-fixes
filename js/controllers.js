@@ -302,9 +302,7 @@
             return this.esta_reservado(row, col) && this.asientos_predeterminados[row+col] == 'N';
         }
         this.raw_data_ocupado = function (row, col) {
-
             var cellObj = getReverseCell(row, col);
-            
             return this.raw_data.asientos_ocupados.indexOf(cellObj.nombre_mostrar) !== -1;
         }
         this.esta_ocupado = function (coord) {
@@ -320,6 +318,14 @@
 
         this.esta_tomado = function (row, col) {
             return this.asientos_reservados.indexOf([row, col].join('')) !== -1;
+        }
+
+        this.es_4x = function (coordVisible) {
+            return _.get(this.raw_data, 'asientos_4x', []).indexOf(coordVisible) !== -1;
+        }
+        
+        this.es_vip = function (coordVisible) {
+            return _.get(this.raw_data, 'asientos_vip', []).indexOf(coordVisible) !== -1;
         }
 
         
@@ -492,6 +498,8 @@
                     cell.no_usado = self.esta_no_usado(cell.col, cell.row);
                     cell.tomado = self.esta_tomado(cell.col, cell.row);
                     cell.nombre_mostrar = cellData.nombre_real;
+                    cell.es_4x = self.es_4x(cellData.nombre_real)
+                    cell.es_vip = self.es_vip(cellData.nombre_real)
                     row.push(cell);
                     self.hash_mapa[cell.coord] = cell;
                 }

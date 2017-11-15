@@ -38,7 +38,7 @@ body{
     font-weight: bold;
 }
 
-.room-cell.btn-default{
+.room-cell.btn-disponible{
 	color: rgba(3,3,3,.6);
 }
 
@@ -117,4 +117,43 @@ body{
 
 .btn-margensito{
     margin-left: 2px;
+}
+
+.btn-disponible{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-no-utilizado{
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+.btn-ocupado{
+    color: #fff;
+    background-color: #949494;
+    border-color: #878787;
+}
+.btn-no-disponible{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.btn-seleccionado{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn-seleccionado:hover{
+    color: #fff;
+}
+.btn-4x{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn-vip{
+    color: #fff;
+    background-color: #9d40bb;
+    border-color: #712392;
 }
