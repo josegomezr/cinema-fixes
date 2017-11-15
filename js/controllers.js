@@ -360,7 +360,7 @@
         this.conmutarAsiento = function (row, col) {
             if(
                 this.esta_reservado(row, col) 
-                && (this.raw_data_ocupado(row, col) || this.esta_no_usado(row, col))
+                && this.raw_data_ocupado(row, col) 
                 ){
                 console.log(row, col, '-- status---', 'reservado?', this.esta_reservado(row, col), 'ocupado?', this.raw_data_ocupado(row, col) )
 
