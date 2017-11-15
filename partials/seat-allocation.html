@@ -39,8 +39,8 @@
                         'invisible': (r_val.pasillo || r_val.no_disponible),  
                         'btn-no-utilizado': r_val.no_usado, 
                         'btn-ocupado': r_val.ocupado, 
-                        'btn-4x': r_val.es_4x && !r_val.ocupado,
-                        'btn-vip': r_val.es_vip && !r_val.ocupado,
+                        'btn-4x': r_val.es_4x && !r_val.ocupado && !r_val.tomado,
+                        'btn-vip': r_val.es_vip && !r_val.ocupado && !r_val.tomado,
                         'btn-seleccionado': r_val.tomado,
                         'btn-disponible': !(r_val.no_disponible || r_val.pasillo || r_val.no_usado || r_val.ocupado || r_val.tomado || r_val.es_4x || r_val.es_vip)
                     }"
